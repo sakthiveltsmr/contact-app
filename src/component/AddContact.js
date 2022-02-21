@@ -1,20 +1,20 @@
 import React from "react";
 
 class AddContact extends React.Component {
-  state = {
-    name: "",
-    email: "",
-  };
+  // state = {
+  //   name: "",
+  //   email: "",
+  // };
 
-  add = (e) => {
-    e.preventDefault();
-    if (this.state.name === "" || this.state.email === "") {
-      alert("ALl the fields are mandatory!");
-      return;
-    }
-    this.props.addContactHandler(this.state);
-    this.setState({ name: "", email: "" });
-  };
+  // add = (e) => {
+  //   e.preventDefault();
+  //   if (this.state.name === "" || this.state.email === "") {
+  //     alert("ALl the fields are mandatory!");
+  //     return;
+  //   }
+  //   this.props.addContactHandler(this.state);
+  //   this.setState({ name: "", email: "" });
+  // };
   render() {
     return (
       <div className="ui main">
@@ -26,8 +26,8 @@ class AddContact extends React.Component {
               type="text"
               name="name"
               placeholder="Name"
-              value={this.state.name}
-              onChange={(e) => this.setState({ name: e.target.value })}
+              // value={this.state.name}
+              // onChange={(e) => this.setState({ name: e.target.value })}
             />
           </div>
           <div className="field">
@@ -36,8 +36,8 @@ class AddContact extends React.Component {
               type="text"
               name="email"
               placeholder="Email"
-              value={this.state.email}
-              onChange={(e) => this.setState({ email: e.target.value })}
+              // value={this.state.email}
+              // onChange={(e) => this.setState({ email: e.target.value })}
             />
           </div>
           <button className="ui button blue">Add</button>
